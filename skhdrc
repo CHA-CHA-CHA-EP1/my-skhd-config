@@ -78,6 +78,12 @@ shift + alt - 5 : yabai -m window --space 5;
 shift + alt - 6 : yabai -m window --space 6;
 shift + alt - 7 : yabai -m window --space 7;
 
+#set insertion point to focused container
+ctrl + alt - a : yabai -m window --insert west
+ctrl + alt - s : yabai -m window --insert south
+ctrl + alt - w : yabai -m window --insert north
+ctrl + alt - d : yabai -m window --insert east
+
 # -- Starting/Stopping/Restarting Yabai --
 
 # stop/start/restart yabai
