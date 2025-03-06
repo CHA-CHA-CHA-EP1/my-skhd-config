@@ -7,16 +7,16 @@ alt - h : yabai -m window --focus west
 alt - l : yabai -m window --focus east
 
 # increase window size
-ctrl + alt + shift - h : yabai -m window --resize left:-10:0
-ctrl + alt + shift - j : yabai -m window --resize bottom:0:10
-ctrl + alt + shift - k : yabai -m window --resize top:0:-10
-ctrl + alt + shift - l : yabai -m window --resize right:10:0
+ctrl + alt + shift - h : yabai -m window --resize left:-30:0
+ctrl + alt + shift - j : yabai -m window --resize bottom:0:30
+ctrl + alt + shift - k : yabai -m window --resize top:0:-30
+ctrl + alt + shift - l : yabai -m window --resize right:30:0
 
 # decrease window size
-ctrl + shift - h : yabai -m window --resize left:10:0
-ctrl + shift - j : yabai -m window --resize bottom:0:-10
-ctrl + shift - k : yabai -m window --resize top:0:10
-ctrl + shift - l : yabai -m window --resize right:-10:0
+ctrl + shift - h : yabai -m window --resize left:30:0
+ctrl + shift - j : yabai -m window --resize bottom:0:-30
+ctrl + shift - k : yabai -m window --resize top:0:30
+ctrl + shift - l : yabai -m window --resize right:-30:0
 
 
 #change focus between external displays (left and right)
@@ -37,6 +37,12 @@ shift + alt - x : yabai -m space --mirror x-axis
 
 # toggle window float
 shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# move floating window
+shift + ctrl - a : yabai -m window --move rel:-30:0
+shift + ctrl - s : yabai -m window --move rel:0:30
+shift + ctrl - w : yabai -m window --move rel:0:-30
+shift + ctrl - d : yabai -m window --move rel:30:0
 
 # -- Modifying Window Size --
 
@@ -64,6 +70,8 @@ ctrl + alt - l : yabai -m window --warp east
 shift + alt - s : yabai -m window --display west; yabai -m display --focus west;
 shift + alt - g : yabai -m window --display east; yabai -m display --focus east;
 
+# toggle window split type
+alt - e : yabai -m window --toggle split
 
 # move window to prev and next space
 shift + alt - p : yabai -m window --space prev;
