@@ -98,3 +98,18 @@ ctrl + alt - d : yabai -m window --insert east
 ctrl + alt - q : brew services stop yabai
 ctrl + alt - s : brew services start yabai
 ctrl + alt - r : brew services restart yabai
+
+# ประกาศโหมด openapp ที่จะคอยรับคีย์เพรส
+:: default
+:: openapp @
+
+# ใช้ alt - o เพื่อเข้าสู่โหมด openapp
+default < alt - o ; openapp
+
+openapp < space ; default
+openapp < escape ; default
+
+openapp < a : open -a /Applications/Arc.app; default
+openapp < s : open -a /Applications/Safari.app; default
+openapp < d : open -a /Applications/Discord.app; default
+openapp < t : open -a /Applications/WezTerm.app; default
