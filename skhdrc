@@ -113,3 +113,7 @@ openapp < a : open -a /Applications/Arc.app; default
 openapp < s : open -a /Applications/Safari.app; default
 openapp < d : open -a /Applications/Discord.app; default
 openapp < t : open -a /Applications/WezTerm.app; default
+openapp < c : open -a /Applications/Claude.app; default
+
+openapp < k : osascript -e 'set volume output volume (output volume of (get volume settings) + 5)'
+openapp < j : osascript -e 'set volume output volume (output volume of (get volume settings) - 5)'
